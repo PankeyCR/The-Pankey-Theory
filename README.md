@@ -18,6 +18,7 @@ This system introduces a symbolic language and axiomatic core capable of describ
 To fully understand The No Theory, start here:
 
 1. **Formal Language & Static Structures** - formal-math.md
+   
    The basic grammar and symbol system of The No Theory, including:
    - Dynamic vs. Static construction
    - Loop Structures
@@ -25,6 +26,7 @@ To fully understand The No Theory, start here:
    - Collapse Operator
 
 2. **Axiom System**   - axioms.md
+   
    The core principles that define existence, paradox, and collapse:
    - The existence of `Ω`, the ultimate impossibility
    - The nature of proper paradoxes
@@ -37,6 +39,7 @@ Once those foundations are understood, other modules—such as abstraction, stru
 ## 📚 Further Reading
 
 For a discussion on why static analysis lies outside classical computation, see:
+
 non-computability.md
 
 ---
