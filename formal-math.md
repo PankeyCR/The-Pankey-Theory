@@ -14,10 +14,12 @@
 | `▷`    | Becomes                     | Specifies a definite result. |
 | `⟳`    | Static Loop                 | Denotes a circular relationship. |
 | `:`    | Via                         | Used in static loops: A loops to A via B. |
-| `↓`    | Collapse                    | Boolean: structure allows external logic export. |
+| `⊗`   | Interaction                 | Structures sharing the same space. |
+| `↓`    | Collapse                    | Structural result. |
 | `≣`    | Structural Equality         | Static structure comparison. |
 | `∧`    | And                         | Parallel composition of structures. |
 | `∨`    | Or                          | Disjunctive structural option. |
+| `=`    | Equal                       | Asignment of reference. |
 | `¬`    | Not                         | Negation. |
 | `∈`    | Belongs To                  | Membership. |
 | `∀`    | For all                     | Iterates or asumes all posibilities. |
@@ -26,7 +28,21 @@
 
 ### 🧮 Core Operations
 
-#### 1. **Dynamic Construction**
+#### 1. **Static Entities**
+
+#### Example 1: Invalide Reference
+
+`A ¬= A`  
+Invalidates a state
+
+#### Example 2: Direction destruction
+
+`A ∈ B ∧ B ∈ A`  
+Destroys the direction in which it can tend to
+
+---
+
+#### 2. **Dynamic Construction**
 
 #### Example 1: Simple Construction
 
@@ -53,14 +69,14 @@ This defines a constructive cycle between A and B and back to A. It is a **poten
 `A → B → C → A`  
 Means A loops to A but it goes through B and C sequentially until it circles back to A. No resolution.
 
-#### Example 6: Larger Loop Construction
+#### Example 6: Multiple Path Loop Construction
 
 `A → B → A ∧ A → C → A`  
 Means A loops to A but it goes through B and C in parallele until it circles back to A. No resolution.
 
 ---
 
-#### 2. **Translation into Static**
+#### 3. **Translation into Static**
 
 #### Example 1: Simple Translation 
 
@@ -87,29 +103,10 @@ This becomes a **loop structure**, statically defined as “A loops to A via B.�
 `A → B → C → A ~ A ⟳ A : (B ∧ C)`  
 Means A loops to A via B and C.
 
-#### Example 6: Larger Loop Translation
+#### Example 6: Multiple Path Loop Translation
 
 `A → B → A ∧ A → C → A ~ A ⟳ A : (B ∨ C)`  
 Means A loops to A via B or C.
-
----
-
-#### 3. **Collapse Operator**
-
-Evaluates whether a structure allows **external logical resolution**.
-
-| Structure                  | Collapse Result |
-|---------------------------|------------------|
-| `A ▷ B`                   | `true`           |
-| `A ⟳ A : B`               | `false`          |
-
-Collapse is **Boolean** and applies only after translation.
-
-#### Example
-
-`A ▷ B ↓ true`
-
-`A ⟳ A : B ↓ false`
 
 ---
 
@@ -117,86 +114,29 @@ Collapse is **Boolean** and applies only after translation.
 
 Use `≣` to compare static constructs:
 
+`A ▷ D : ( B ∧ C ) ≣ W ▷ Z : ( X ∧ Y )` 
 `A ⟳ A : B ≣ C ⟳ C : D` 
 - True if structures are form-identical.
 - Applies only after translation; structure-only, not resolution-based.
 
 ---
 
-### 🧮 Loop Constraints
+#### 5. **Interaction and Collapse**
 
-#### ✅ Valid Parallel Loops
+#### Example 1: 
 
-- `A ⟳ A : B ∧ C ⟳ C : D`  
-Parallel, distinct, and analyzable.
+`A ⟳ A : B ⊗ A ⟳ A : B ↓ A ⟳ A : B`
 
-#### ❌ Invalid (Nested or Obscured Loops)
+#### Example 2: 
 
-- `A ⟳ (C ⟳ C : D)`  
-Nesting obscures structure and breaks static visibility.
+`A ⟳ A : ( B ∧ C ) ⊗ A ⟳ A : B ↓ A ⟳ A : B , ( B ∧ C )`
 
----
+#### Example 3: 
 
-### 🧩 Types of Structures
+`A ¬= A ⊗ A ⟳ A : B ↓ B`
 
-In *The No Theory*, all entities are classified based on their internal contradiction and structural relation to logic. These types reflect the static role a structure plays in the system:
+#### Example 4: 
 
----
-
-#### 1. **Ultimate Impossibility (`Ω`)**
-
-- The boundary of all logic and static analysis.  
-- Internally contains infinite unresolved contradiction.  
-- It is **externally real** (referable), but internally unstructured by logic.  
-- No structure can surpass or resolve `Ω`.
+`A ∈ B ∧ B ∈ A ⊗ A ⟳ A : B ↓ A ∧ B`
 
 ---
-
-#### 2. **Proper Paradox**
-
-- A structure that contains an **irreducible contradiction**.  
-- Forms a **closed static loop** with no internal resolution or collapse `↓`.  
-- It **belongs to** `Ω`, but is not equal to it.  
-- No logic can be exported without interaction.
-
-- Example:  
-  `A ⟳ A : B`  
-  where `B` creates contradiction and `A` cannot resolve.
-
----
-
-#### 3. **Composite Paradox**
-
-- A structure that includes a **proper paradox** and **logical components**.  
-- This allows **partial resolution** or **conditional collapse `↓`**.  
-- Composite paradoxes may resolve depending on how internal contradiction is shaped by external logic.
-
-- Example:  
-  `P ∧ L` where `P` is a proper paradox and `L` is logically coherent.
-
----
-
-#### 4. **Logical Structure**
-
-- A structure with **no internal contradiction**.  
-- Fully reducible and capable of exporting collapse `↓` by static translation.
-
-- Example:  
-  `A → B → C ~ A ▷ C : B`  
-  Clear construction path with no paradox.
-
----
-
-This classification defines the full spectrum of structural behavior. Structures do not tend toward infinite growth. Instead, **many paradoxes simplify, collapse, or loop** depending on interaction and static form.
-
----
-
-### 📌 Notes
-
-- **Static analysis** is non-computational.
-- Collapse is Boolean (`true` or `false`).
-- Proper paradoxes are structurally defined, not errors.
-- Use `∧` and `∨` for combining structures in parallel or disjunctive ways.
-
----
-
