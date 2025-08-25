@@ -1,4 +1,4 @@
-# The No Theory: A Static Foundation for Paradox, Realness, and Collapse
+# The Pankey Theory: A Static Foundation for Illogics
 
 **Author**: Manuel José Sánchez Badilla — Pankey  
 **Status**: Research in Progress  
@@ -8,48 +8,51 @@
 
 ## 📌 Overview
 
-A formal framework for constructing, classifying, and analyzing paradoxes, impossibilities, and collapse structures in a non-logical, static foundation.  
-This system introduces a symbolic language and axiomatic core capable of describing infinite loops, structural contradiction, and realness beyond computation.
+The Pankey Theory is a formal framework for constructing, classifying, and analyzing paradoxes, impossibilities, and collapse structures in a static (non-computational) foundation.
+
+Instead of rejecting contradictions, it treats them as first-class objects of analysis. Using a symbolic language and axiomatic system, this theory explores how structures that are logically impossible can still have form, interact, and produce real, logical outcomes.
+
+This is not just a reformulation of logic. It is a meta-framework beyond logic, showing how illogics can coexist, collide, and collapse into reality.
 
 ---
 
 ## 📚 Reading Pathway
 
-To fully understand The No Theory, start here:
+To understand The Pankey Theory in a structured way, follow this path:
 
-1. **Formal Language & Static Structures** - formal-math.md
+1. **Principles and Philosophy**   - theory.md
    
-   The basic grammar and symbol system of The No Theory, including:
-   - Dynamic vs. Static construction
-   - Loop Structures
-   - Static Equality
-   - Collapse Operator
+   Explains why illogics are treated as a constructible object, why static analysis is required, and why this theory does not "explain everything" but frames everything.
 
 2. **Axiom System**   - axioms.md
    
-   The core principles that define existence, paradox, and collapse:
+   The formal foundation:
+   - The axiom of inevitable conclusion
    - The existence of `Ω`, the ultimate impossibility
-   - The nature of proper paradoxes
-   - The condition for external realness and logical collapse
+   - Logic and hiden structures
 
-Once those foundations are understood, other modules—such as abstraction, structural interactions, and realness—can be explored with clarity.
+3. **Formal Language & Static Structures** - formal-math.md
+   
+   The grammar and symbolic system:
+   - Dynamic vs. Static construction
+   - Translation operator
+   - Static Equality
+   - Collapse Operator
+
+Once those foundations are understood, other modules can be understood coherently.
 
 ---
 
 ## 📚 Further Reading
 
-For a discussion on why static analysis lies outside classical computation, see:
-
 non-computability.md
+consciousness.md
 
 ---
 
 ## 🧠 Goal
 
-The No Theory aims to construct a new foundation for thought and analysis based on **static structure**, not computation or derivation.  
-It treats paradox not as failure, but as the **central object** of formal analysis.
-
-This is a formal exploration of what remains when logic reaches its own boundary—and what can still be said from beyond it.
+The ultimate goal is to create a mature formal system that classifies illogics, defines their interactions, and explains how reality emerges from illogic.
 
 ---
 

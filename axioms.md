@@ -78,7 +78,7 @@ This logics didn´t reside inside the ultimate illogic, they live outside of it 
 
 ## Axiom 7: Existence
 
-When the interactions of illogics gives an emergent logic, this logic manifest outside the ultimate illogic, this makes it something resolvable, something that exist.
+When the interactions of illogics gives an emergent logic, this logic manifest outside the illogic realm, this makes it something resolvable, something that exist.
 
 ---
 
