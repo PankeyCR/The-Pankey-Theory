@@ -25,7 +25,43 @@ The only means to create an illogic is to force a logic into itself because is t
 
 For every type of logic we can form an illogic, and this give rise to diferents types of illogic, each with diferent structures. 
 
-The first way of diferentiating structure is by stationary and cyclic.
+The first way of diferentiating structure is by the way of viewing it, it can seems stationary or cyclic. But the elegant way to use it is by the cyclic aproche. This cyclic interpretation can be form by a tendency or chain in sequence. This tendency is also how to transform the stationary description into the cyclic.
+
+The types of structure comes for the ways you can arrange a cycle: 
+-how many steps it takes to complete a cicle.
+-how many path it can take.
+-how many return point does it have.
+
+All the forms it can have its a diferent type of illogic.
+
+---
+
+### 🧩 Cardinality
+
+The cardinality comes from the second act of abstraction, first from the elements in the cycle, an second from the order of the cycle. Each element is separeted by the tends to operator.
+
+`| A → B → C → D | = 4`  
+
+When the cycle is form, the cardinality becomes transfinite, but the type of structure determines the diferent size of it.
+
+`| A ⟳ A | = ℵ₀` 
+`| A ⟳ A : B | = 2₀ ⋅ ℵ₀`  
+`| A ⟳ A : ( B ∧ C ) | = 3₀ ⋅ ℵ₀` 
+
+This is how the countable cycles grow in cardinality. Since the loop takes more to complete, the growth if bigger. It might look that it has the same size as the totality of the natural numbers but the natural numbers only can be constructed as a trivial loop and not as something more.
+
+`A ∈ A ~ A ⟳ A`  
+
+And if A is an unit.
+
+`A = 1`  
+
+Then A loops to A contains all units that can be and the cardinality is ℵ₀.
+
+Now we can define cardinality to other types of structures:
+
+`| A ⟳ A : ( B ∨ C ) | = 2₀^ℵ₀` 
+
 
 ---
 

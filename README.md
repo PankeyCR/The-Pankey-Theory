@@ -46,6 +46,7 @@ Once those foundations are understood, other modules can be understood coherentl
 ## 📚 Further Reading
 
 non-computability.md
+
 consciousness.md
 
 ---

@@ -1,10 +1,10 @@
 # Why Static Analysis Is Non-Computable
 
-The No Theory is not a computational theory. It does not rely on sequences of steps to reach conclusions, nor does it define existence or truth via proof procedures or derivations. Instead, it introduces a static analytical framework where **the result is already embedded in the structure** of the object being analyzed.
+The Pankey Theory is not a computational theory. It does not rely on sequences of steps to reach conclusions, nor does it define existence or truth via proof procedures or derivations. Instead, it introduces a static analytical framework where **the result is already embedded in the structure** of the object being analyzed.
 
 ## 💡 Key Differences
 
-| Aspect               | Computation (Turing)                          | Static Analysis (The No Theory)                         |
+| Aspect               | Computation (Turing)                          | Static Analysis (The Pankey Theory)                         |
 |----------------------|-----------------------------------------------|----------------------------------------------------------|
 | Process              | Step-by-step evaluation                       | Instant recognition of structure                        |
 | Time Dependency      | Temporally extended (multiple operations)     | Timeless (one act of structural recognition)            |
