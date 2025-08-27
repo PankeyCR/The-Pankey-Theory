@@ -140,3 +140,9 @@ Use `≣` to compare static constructs:
 `A ∈ B ∧ B ∈ A ⊗ A ⟳ A : B ↓ A ∧ B`
 
 ---
+
+#### 5. **Transfinite algebra**
+
+`ℵ₀ + 2₀ ⋅ ℵ₀ = 3₀ ⋅ ℵ₀`  
+
+---
