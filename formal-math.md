@@ -121,26 +121,6 @@ Use `≣` to compare static constructs:
 
 ---
 
-#### 5. **Interaction and Collapse**
-
-#### Example 1: 
-
-`A ⟳ A : B ⊗ A ⟳ A : B ↓ A ⟳ A : B`
-
-#### Example 2: 
-
-`A ⟳ A : ( B ∧ C ) ⊗ A ⟳ A : B ↓ A ⟳ A : B , ( B ∧ C )`
-
-#### Example 3: 
-
-`A ¬= A ⊗ A ⟳ A : B ↓ B`
-
-#### Example 4: 
-
-`A ∈ B ∧ B ∈ A ⊗ A ⟳ A : B ↓ A ∧ B`
-
----
-
 #### 5. **Transfinite algebra**
 
 `ℵ₀ + 2₀ ⋅ ℵ₀ = 3₀ ⋅ ℵ₀`  

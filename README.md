@@ -45,15 +45,21 @@ Once those foundations are understood, other modules can be understood coherentl
 
 ## 📚 Further Reading
 
-non-computability.md
-
-consciousness.md
+- the-need-of-axioms.md  
+- non-computability.md  
+- theory-of-models.md  
+- consciousness.md  
+- free-will.md  
+- the-measurement-problem.md  
+- dark-matter.md  
+- dark-energy.md  
+- the-origin-of-the-universe.md  
 
 ---
 
 ## 🧠 Goal
 
-The ultimate goal is to create a mature formal system that classifies illogics, defines their interactions, and explains how reality emerges from illogic.
+The ultimate goal is to create a mature formal system that classifies illogics, defines their interactions, and explains how reality emerges from illogic and to be a foundation for every theory of the universe as a base.
 
 ---
 
