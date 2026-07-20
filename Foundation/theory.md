@@ -20,6 +20,8 @@ One of the ideas of static analysis is to avoid leaking nonsense into the thinki
 
 Static analisys doesn´t leak nonsense into the thinking process because it doesn´t take any answer from the illogic, the illogic collapses into a structure and the structure can be analise without the need of an answer.  
 
+Having no answer means that the illogic is undecided as a structure, not hidden in a way that you need to find out what is real.  If you try to find the solution, you´ll destroy the illogic and maybe get an answer but it will be dependent of the interaction with the illogic.  
+
 ---
 
 ### 🧩 What is a Structure
@@ -42,9 +44,13 @@ An illogic cannot be resolved, and to express this notion we use the cyclic stru
 
 `A ⟳ A`  
 
-This gives an immediate resolution by recognizing the loop symbol that shows that is a never-ending expression.
+or in a simplified version.  
 
-This structure can be written down with normal math but it does not give the understanding of its unresolvable nature, like the expression:
+`A ⟳` 
+
+This gives an immediate realization by recognizing the loop symbol that shows that is a never-ending expression.
+
+This structure can be written down with normal math but it does not give the understanding of its unresolvable nature, like the expression of A belongs to A:
 
 `A ∈ A`  
 
@@ -55,7 +61,7 @@ The types of structure come from the ways you can arrange a cycle:
 
 - How many steps it takes to complete a cycle.  
 - How many paths it can take.  
-- How many return points it has.
+- How many cycles does a cycle has.
 
 All these forms describe different types of illogic.
 
@@ -85,9 +91,26 @@ This is read as “A loops to A with the condition that B belonges to A”. The 
 
 #### 2. **Logical Structure**
 
+A logical structure has a resolution, one or multiple ending points. It can be expres with the becomes symbol like this:
+
 `A ▷ D`  
 
+This gives an immediate realization that the structure has an ending and what is it´s the result.  
+An structure can have multiple steps to get to the result and it can be express with the "and" operator:
+
+`A ▷ D : (B ∧ C)` 
+
+It can also have multiple paths to get to the result with the "or" operator:
+
 `A ▷ D : (B ∨ C)`  
+
+It can also have multiple results given at the same time express with the "and" operator:
+
+`A ▷ (C ∧ D) : B` 
+
+And it can also have a range of posible result given with the "or" operator:
+
+`A ▷ (C ∨ D) : B`
 
 ---
 
@@ -149,16 +172,7 @@ When the cycle is formed, the cardinality becomes transfinite, but the type of s
 `| A ⟳ A : B | = 2₀ ⋅ ℵ₀`  
 `| A ⟳ A : (B ∧ C) | = 3₀ ⋅ ℵ₀`  
 
-This is how countable cycles grow in cardinality. Since the loop takes more to complete, the growth is bigger. It may seem that these have the same size as the natural numbers, but the natural numbers can only be constructed as a trivial loop and not as something more complex.
-
-`A ∈ A ~ A ⟳ A`  
-
-And if A is a unit:  
-
-`A = 1`  
-
-Then A loops to A contains all units that can be, and the cardinality is ℵ₀.  
-The structure of A loops to A completely defines the cardinality of ℵ₀ in a static way — no computational construction can express the never-ending nature of this infinity.
+This is how countable cycles grow in cardinality. Since the loop takes more to complete, the growth is bigger. 
 
 To explain why addition or multiplication of cardinality works this way, we clarify the meaning. We abstract from order, but especially from the nature of the elements. If we make a structure containing chickens, ducks, and the container itself, we now have an infinite sequence of three distinct types. This is represented as 3₀, so there are three times as many transfinite elements:
 
@@ -177,6 +191,14 @@ Static analysis gives a direct way to analyze transfinite operations by structur
 
 ### 🧩 Interactions
 
-*(Section in development.)*
+`A → B ⊗ B → C ↓ A → B → C`
+
+`A → B → C ⊗ C → A ↓ A → B → C → A`
+
+`A → B → C → A ~ A ⟳ A : B ∧ C`
+
+`A ▷ B ⊗ B ▷ C ↓ A ▷ C`
+
+`A ⟳ A : B ⊗ B ▷ C ↓ A ⟳ A : B ∧ C`
 
 ---

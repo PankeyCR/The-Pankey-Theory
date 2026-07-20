@@ -1,4 +1,4 @@
-## 📐 Formal Math: Core Structure of The No Theory
+## 📐 Formal Math: Core Structure of The Pankey Theory
 
 **Status**: Under Development  
 **Role**: Defines the symbolic language and foundational operations for all static constructions.
@@ -12,8 +12,9 @@
 | `→`    | Tends To                    | Dynamic construction from A to B. |
 | `~`    | Translation                 | Converts dynamic structure into static form. |
 | `▷`    | Becomes                     | Specifies a definite result. |
-| `⟳`    | Static Loop                 | Denotes a circular relationship. |
+| `⟳`    | Loop                        | Denotes a circular relationship. |
 | `:`    | Via                         | Used in static loops: A loops to A via B. |
+| `⊢`    | Condition                   | Extra information about a structure. |
 | `⊗`   | Interaction                 | Structures sharing the same space. |
 | `↓`    | Collapse                    | Structural result. |
 | `≣`    | Structural Equality         | Static structure comparison. |
@@ -21,28 +22,13 @@
 | `∨`    | Or                          | Disjunctive structural option. |
 | `=`    | Equal                       | Asignment of reference. |
 | `¬`    | Not                         | Negation. |
-| `∈`    | Belongs To                  | Membership. |
-| `∀`    | For all                     | Iterates or asumes all posibilities. |
+| `★`    | All                         | Totality off references. |
 
 ---
 
 ### 🧮 Core Operations
 
-#### 1. **Static Entities**
-
-#### Example 1: Invalide Reference
-
-`A ¬= A`  
-Invalidates a state
-
-#### Example 2: Direction destruction
-
-`A ∈ B ∧ B ∈ A`  
-Destroys the direction in which it can tend to
-
----
-
-#### 2. **Dynamic Construction**
+#### **Dynamic Construction**
 
 #### Example 1: Simple Construction
 
@@ -76,7 +62,7 @@ Means A loops to A but it goes through B and C in parallele until it circles bac
 
 ---
 
-#### 3. **Translation into Static**
+#### **Translation into Static**
 
 #### Example 1: Simple Translation 
 
@@ -110,7 +96,7 @@ Means A loops to A via B or C.
 
 ---
 
-#### 4. Structural Equality
+#### Structural Equality
 
 Use `≣` to compare static constructs:
 
@@ -119,10 +105,29 @@ Use `≣` to compare static constructs:
 - True if structures are form-identical.
 - Applies only after translation; structure-only, not resolution-based.
 
----
+---  
 
-#### 5. **Transfinite algebra**
+#### The path not taken
 
-`ℵ₀ + 2₀ ⋅ ℵ₀ = 3₀ ⋅ ℵ₀`  
+`A → B ¬→ C ∧ B → D ≣ A → B → D`  
 
----
+`A → B → D ~ A ▷ D : B`  
+
+---  
+
+#### The exclusion of an element
+
+`A → B → ¬C ∧ B → D ≣ A → B → ¬C`  
+
+`A → B → ¬C ~ A ▷ ¬C : B`  
+
+---  
+
+#### Any element can go
+
+`A → B → ¬C ∧ B → C ≣ A → B → ★`  
+
+`A → B → ★ ~ A ▷ ★ : B`  
+
+
+---  

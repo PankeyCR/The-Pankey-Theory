@@ -20,7 +20,7 @@ The Pankey Theory is not a computational theory. It does not rely on sequences o
 ## 🚫 No Turing Machine Can Perform Static Analysis
 
 A Turing Machine can simulate finite derivations but cannot analyze an object that **contains its own contradiction** without infinite looping or failure.  
-The No Theory classifies such objects not by solving them but by **statically identifying** their form.
+The Pankey Theory classifies such objects not by solving them but by **statically identifying** their form.
 
 > Static analysis is not undecidable; it is **non-computable** because it does not belong to the domain of computation at all.
 
