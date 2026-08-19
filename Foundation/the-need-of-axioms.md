@@ -1,47 +1,89 @@
-# 📑 The Need of Axioms
+# 📑 The Need for Axioms
 
-**Status**: Draft  
-**Role**: Clarify why axioms are indispensable in the framework of illogics.
+**Status:** Draft
 
----
-
-## 🔹 Why Axioms Are Needed Here
-
-This theory deals directly with **illogics** — structures that resist resolution.  
-Illogics cannot be computed without risk: if we try to force them into ordinary reasoning, they leak nonsense.  
-To prevent this erosion, the theory must anchor certain points not by proof, but by declaration.  
-These declarations are the **axioms**.  
+**Role:** Explains why every model requires axioms.
 
 ---
 
-## 🔹 The Special Role of Axioms with Illogics
+# Introduction
 
-- Illogics often generate contradictions when pushed into computation.  
-- At the points where a contradiction would spread uncontrolled, the only way forward is to set an axiom.  
-- The axiom does not “solve” the illogic; it **contains** it, fixing its role within the structure.  
-- In this way, axioms transform what could be destructive nonsense into a stable foundation.
+The Pankey Language defines how structures are written.
 
----
+It does not define meanings, rules, computations, or truths.
 
-## 🔹 How Axioms Function in the Theory
+Every model must therefore establish its own foundations.
 
-- **Detection of leaks** — Every place where nonsense could enter must be checked.  
-- **Conversion into rule** — If the nonsense cannot be avoided, the spot becomes an axiom.  
-- **Consistency check** — If an inconsistency is present *without* being marked as an axiom, the theory is broken.  
-- **Legitimacy of paradox** — If the inconsistency *is* marked as an axiom, then it is no longer a flaw but a foundation.
+These foundations are the model's **axioms**.
 
 ---
 
-## 🔹 Mapping the Boundary
+# Why Axioms Are Needed
 
-Axioms in this theory are not optional assumptions; they are the **boundary markers**.  
-They identify where reasoning must stop, where no computation is possible, and where the system needs a fixed point.  
-By explicitly placing axioms at every such boundary, the theory avoids hidden leaks and keeps its structures coherent.
+A model cannot derive every statement from within itself.
+
+At some point, it must begin with assumptions that define the interpretation of its structures.
+
+These assumptions are the axioms.
+
+They provide the starting point from which every other construction, transformation, and inference is defined.
 
 ---
 
-## 🔹 Conclusion
+# The Role of Axioms
 
-Every encounter with illogic risks introducing nonsense.  
-Axioms are the safeguard: each one is a controlled point of acceptance that blocks uncontrolled spread.  
-In this way, axioms both **justify** the system and **protect** it, mapping a path through paradox without being destroyed by it.  
+The role of axioms is not to prove.
+
+Their role is to define.
+
+Axioms establish:
+
+* the objects of the model;
+* the meaning of its structures;
+* the interpretation of its symbols;
+* the rules governing interactions;
+* the criteria for valid conclusions.
+
+Without axioms, a collection of structures has no interpretation.
+
+---
+
+# Independence
+
+Every model defines its own axioms.
+
+Different models may adopt different foundations, even when written using the same language.
+
+The Pankey Language imposes no preferred set of axioms.
+
+---
+
+# Evolution
+
+A model may evolve by introducing new axioms, replacing existing ones, or extending another model.
+
+Such changes produce new models rather than modifying the language itself.
+
+---
+
+# Illogics
+
+Some models may study illogical structures.
+
+In these models, axioms may define how illogical structures are interpreted, classified, or manipulated.
+
+Other models may contain no notion of illogic at all.
+
+The existence and interpretation of illogics belong entirely to the model.
+
+---
+
+# Conclusion
+
+Axioms are not properties of The Pankey Language.
+
+They are properties of models.
+
+The language provides the means to describe structures.
+
+Models provide the assumptions that give those structures meaning.

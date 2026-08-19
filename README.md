@@ -8,64 +8,23 @@
 
 ## 📌 Overview
 
-The Pankey Theory is a formal framework for constructing, classifying, and analyzing paradoxes, impossibilities, and collapse structures in a static (non-computational) foundation.
+The Pankey Theory is a formal framework for constructing, classifying, and analyzing paradoxes, impossibilities, and collapse structures within a static (non-computational) foundation.
 
-Instead of rejecting contradictions, it treats them as first-class objects of analysis. Using a symbolic language and axiomatic system, this theory explores how structures that are logically impossible can still have form, interact, and produce real, logical outcomes.
+At its core, this framework relies on a **universal language**—a neutral, absolute medium of representation that provides the minimal formal space required to express any concept, entity. Language itself imposes no rules of inference or logical constraints; it serves purely as the foundational substrate.
 
-This is not just a reformulation of logic. It is a meta-framework beyond logic, showing how illogics can coexist, collide, and collapse into reality.
-
----
-
-## 📚 Reading Pathway
-
-To understand The Pankey Theory in a structured way, follow this path:
-
-1. **Principles and Philosophy**   - theory.md
-   
-   Explains why illogics are treated as a constructible object, why static analysis is required, and why this theory does not "explain everything" but frames everything.
-
-2. **Axiom System**   - axioms.md
-   
-   The formal foundation:
-   - The axiom of inevitable conclusion
-   - The existence of `Ω`, the ultimate impossibility
-   - Logic and hiden structures
-
-3. **Formal Language & Static Structures** - formal-math.md
-   
-   The grammar and symbolic system:
-   - Dynamic vs. Static construction
-   - Translation operator
-   - Static Equality
-   - Collapse Operator
-
-Once those foundations are understood, other modules can be understood coherently.
-
----
-
-## 📚 Further Reading
-
-- the-need-of-axioms.md  
-- non-computability.md  
-- theory-of-models.md  
-- consciousness.md  
-- free-will.md  
-- the-measurement-problem.md  
-- dark-matter.md  
-- dark-energy.md  
-- the-origin-of-the-universe.md  
+Upon this universal language, the theory instantiates its own axiomatic system. 
 
 ---
 
 ## 🧠 Goal
 
-The ultimate goal is to create a mature formal system that classifies illogics, defines their interactions, and explains how reality emerges from illogic and to be a foundation for every theory of the universe as a base.
+The ultimate goal of this project is to build a mature formal system that classifies illogics, defines their interaction dynamics, and serves as a universal base substrate for theoretical modeling across physics, logic, and cognitive sciences.
 
 ---
 
-## 📫 Contact
+## 📫 Contact & Collaboration
 
-If you’re interested in building formal models, collaborating on paradox algebra, or applying this system to quantum or cognitive structures, feel free to open an issue or contact directly.
+If you are interested in formalizing paradox algebras, developing static non-computable models, or applying this framework to quantum or cognitive structures, feel free to open an issue or reach out directly.
 
 ---
 

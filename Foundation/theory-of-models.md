@@ -1,47 +1,116 @@
 # 🌀 Theory of Models
 
-**Status**: Early Draft  
-**Role**: Clarifies how the Pankey Theory generates models of reality.
+**Status:** Under Development
+
+**Role:** Defines what a model is and how models are constructed using The Pankey Language.
 
 ---
 
-### 🧩 Introduction
+# Introduction
 
-The Pankey Theory is not presented as a closed description of all reality. It is a framework that accepts its own limits. Through static analysis, it becomes clear that **illogics cannot be computed**. Beyond the universe lies only illogic, and while we can describe their **interactions**, we cannot fully resolve or calculate them.  
+The Pankey Language provides a structural metalanguage.
 
-This limitation does not weaken the theory — it defines its proper role. The Pankey Theory is therefore a **meta-theory**: it provides the tools to **create models** of phenomena in the universe.
+It does not describe reality by itself.
 
----
+Instead, it provides the means to construct models.
 
-### 🧩 What is a Model?
+A model is an interpretation of structures intended to describe some domain.
 
-A **model** is a structured description of some part of reality, built using the language of the theory (loops, conditions, interactions).  
-
-- A model does not claim to explain *everything*.  
-- It isolates some variables or attributes of reality.  
-- It encodes these variables into structures.  
-- It uses interaction rules to generate outcomes.  
-
-If the outcomes of the model match observed phenomena, the model is valid for that domain. Models can also make **new predictions** that can be tested.
+Different models may describe mathematics, computation, physics, biology, logic, or any other system.
 
 ---
 
-### 🧩 Why Models are Needed
+# What is a Model?
 
-Static analysis sets a **boundary**: it stops computation and captures structures. Beyond that, full resolution is impossible.  
-To proceed, we must construct **models** that approximate reality in partial, testable ways.  
+A model is a collection of structures together with their interpretation.
 
-- Not every aspect of reality requires its own model, but it is often practical to divide phenomena into domains.  
-- Eventually, multiple domains can be integrated into a **larger model**.  
-- In principle, the Pankey Theory can **engloble everything we know**, but new phenomena may always arise, demanding new models.  
+Every model defines:
+
+- its references;
+- its axioms;
+- its conditions;
+- its interaction rules;
+- its transformations;
+- its notion of validity.
+
+The language itself defines none of these.
 
 ---
 
-### 🧩 Outlook
+# Axioms
 
-The Pankey Theory provides a **method** to construct theories, not just one single theory of nature.  
-- Each model applies the same structural principles.  
-- Together, models extend our understanding of the universe.  
-- The challenge is that reality may always surprise us with new illogics and interactions.  
+Every model begins with a finite collection of assumptions.
 
-The **Theory of Models** ensures that whenever this happens, we already have the framework to build new descriptions, integrate them, and expand our knowledge.
+These assumptions define the foundations of that model.
+
+Different models may adopt different axioms.
+
+No model is privileged by the language.
+
+---
+
+# Interpretation
+
+The same structural expression may have different meanings in different models.
+
+The language remains unchanged.
+
+Only the interpretation changes.
+
+---
+
+# Independence
+
+Models are independent.
+
+A model does not require another model unless it explicitly declares that dependency.
+
+Models may therefore:
+
+- extend other models;
+- specialize other models;
+- combine multiple models;
+- or remain completely independent.
+
+---
+
+# Interaction Between Models
+
+Since every model is itself a structure, models may interact.
+
+A model may define rules describing how two or more models relate.
+
+These interactions may generate:
+
+- translations;
+- extensions;
+- restrictions;
+- equivalences;
+- incompatibilities;
+- entirely new models.
+
+---
+
+# Validation
+
+The language does not determine whether a model is correct.
+
+Validation depends on the purpose of the model.
+
+For mathematical models, validation may consist of logical consistency.
+
+For scientific models, validation may consist of agreement with observation.
+
+Other domains may define different validation criteria.
+
+---
+
+# Evolution
+
+Models are expected to evolve.
+
+New structures, axioms, interpretations, and interactions may be introduced without modifying the language itself.
+
+The language provides stability.
+
+Models provide growth.
