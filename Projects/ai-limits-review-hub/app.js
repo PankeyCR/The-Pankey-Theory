@@ -14,9 +14,10 @@ function hasText(value) {
   return value.trim().length > 0;
 }
 
-function classifyReview({ question, conditions, response, validation }) {
+function classifyReview({ question, conditions, response, validation, validationCoverage }) {
   const bounded = hasText(response);
-  const validated = bounded && hasText(validation);
+  const validated = bounded && hasText(validation) && validationCoverage === 'full';
+  const partiallyValidated = bounded && hasText(validation) && validationCoverage === 'partial';
   const hasConditions = hasText(conditions);
 
   if (!bounded) {
@@ -39,6 +40,16 @@ function classifyReview({ question, conditions, response, validation }) {
     };
   }
 
+  if (partiallyValidated) {
+    return {
+      label: 'Partially validated response',
+      bounded: 'Yes',
+      validated: 'Only the stated component',
+      condition: hasConditions ? 'C declared; scope the conclusion' : 'C incomplete',
+      summary: 'A stated method supports part of the response, not every conclusion in it. Separate the validated component from the unresolved or assumption-dependent component.'
+    };
+  }
+
   return {
     label: 'Bounded response only',
     bounded: 'Yes',
@@ -54,7 +65,8 @@ form.addEventListener('submit', (event) => {
     question: document.querySelector('#question').value,
     conditions: document.querySelector('#conditions').value,
     response: document.querySelector('#response').value,
-    validation: document.querySelector('#validation').value
+    validation: document.querySelector('#validation').value,
+    validationCoverage: document.querySelector('#validation-coverage').value
   };
   const outcome = classifyReview(review);
 

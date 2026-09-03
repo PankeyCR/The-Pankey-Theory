@@ -50,6 +50,14 @@
           Validation method, if one exists
           <textarea id="validation" placeholder="Example: a calculation, independently checkable proof, cited measurement, or leave blank."></textarea>
         </label>
+        <label>
+          Validation coverage
+          <select id="validation-coverage">
+            <option value="none">No validation method</option>
+            <option value="partial">Only part of the response is validated</option>
+            <option value="full">The validation method covers the full response</option>
+          </select>
+        </label>
         <button type="submit">Classify response</button>
       </form>
 

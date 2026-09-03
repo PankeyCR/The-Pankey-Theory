@@ -43,11 +43,11 @@ h3 { margin: 13px 0 10px; font-size: 1.42rem; font-weight: 600; }
 .review-form { border-right: 1px solid var(--ink); }
 .section-heading { margin-bottom: 27px; }
 label { display: grid; gap: 8px; margin-top: 18px; font-size: .85rem; font-weight: 700; }
-textarea, input {
+textarea, input, select {
   width: 100%; border: 1px solid #aab2ae; border-radius: 0; padding: 12px; color: var(--ink); background: #fffefb; font: .9rem/1.45 "DM Mono", monospace;
 }
 textarea { min-height: 92px; resize: vertical; }
-textarea:focus, input:focus { outline: 3px solid var(--yellow); outline-offset: 1px; border-color: var(--ink); }
+textarea:focus, input:focus, select:focus { outline: 3px solid var(--yellow); outline-offset: 1px; border-color: var(--ink); }
 button { margin-top: 23px; border: 1px solid var(--ink); border-radius: 0; padding: 11px 17px; color: var(--white); background: var(--ink); cursor: pointer; font: 700 .8rem Manrope, sans-serif; }
 button:hover { background: var(--orange); }
 button.secondary { color: var(--ink); background: transparent; }
