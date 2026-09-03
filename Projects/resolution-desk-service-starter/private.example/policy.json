@@ -1,0 +1,15 @@
+{
+  "name": "Private review policy",
+  "version": "0.1.0",
+  "reviewInstructions": [
+    "Identify each material claim in the submitted answer.",
+    "List assumptions not present in the stated conditions.",
+    "Flag direct contradictions between the answer and conditions.",
+    "Separate validation that covers the entire answer from validation that covers only a component.",
+    "Do not represent an uncertain recommendation as a validated resolution."
+  ],
+  "escalationRules": [
+    "Escalate when evidence is missing for a high-impact decision.",
+    "Escalate when a contradiction changes the recommended action."
+  ]
+}
