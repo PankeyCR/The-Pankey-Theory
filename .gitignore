@@ -1,0 +1,11 @@
+# Private commercial work and customer material
+Commercial/private/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Local site and operating-system files
+.DS_Store
+Thumbs.db

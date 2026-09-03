@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A structured review workspace for the Pankey Theory limits of computational AI.">
+  <title>Resolution Desk | Pankey Theory</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#workspace">Resolution Desk</a>
+    <p>Pankey Theory / AI limits</p>
+    <a class="source-link" href="../../Applications/Limits%20of%20Computational%20AI.md">Read theory</a>
+  </header>
+
+  <main id="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Structured review workspace</p>
+        <h1 id="page-title">Make the limit visible.</h1>
+        <p class="lede">Describe a question, separate facts from assumptions, and decide whether the available conditions support a response, a validated resolution, or an unresolved result.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80" alt="A close view of handwritten notes and a pen on a desk">
+    </section>
+
+    <section class="workbench" aria-label="Resolution review">
+      <form id="review-form" class="review-form">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Describe</p>
+          <h2>Question and conditions</h2>
+        </div>
+        <label>
+          Question or statement
+          <textarea id="question" required placeholder="Example: Is accepting this job offer the best decision for me?"></textarea>
+        </label>
+        <label>
+          Available facts and conditions
+          <textarea id="conditions" required placeholder="Example: salary, commute, responsibilities, goals, and risk tolerance..."></textarea>
+        </label>
+        <label>
+          Proposed response
+          <textarea id="response" required placeholder="State the response to be reviewed."></textarea>
+        </label>
+        <label>
+          Validation method, if one exists
+          <textarea id="validation" placeholder="Example: a calculation, independently checkable proof, cited measurement, or leave blank."></textarea>
+        </label>
+        <button type="submit">Classify response</button>
+      </form>
+
+      <aside class="result-panel" aria-live="polite">
+        <p class="eyebrow">02 / Classify</p>
+        <h2>Current result</h2>
+        <div id="result-empty" class="empty-state">Enter a response to begin a structured review.</div>
+        <div id="result-content" hidden>
+          <span id="classification" class="classification"></span>
+          <p id="result-summary"></p>
+          <dl>
+            <div><dt>Bounded response</dt><dd id="bounded-result"></dd></div>
+            <div><dt>Validated resolution</dt><dd id="validated-result"></dd></div>
+            <div><dt>Declared condition</dt><dd id="condition-result"></dd></div>
+          </dl>
+          <button id="copy-result" class="secondary" type="button">Copy review</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="guide" aria-labelledby="guide-title">
+      <div class="guide-copy">
+        <p class="eyebrow">Review protocol</p>
+        <h2 id="guide-title">Three outcomes, kept separate.</h2>
+      </div>
+      <div class="guide-grid">
+        <article>
+          <span>01</span>
+          <h3>Bounded response</h3>
+          <p>A system returned a finite answer under stated conditions. It may still be uncertain, incomplete, or assumption-dependent.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Validated resolution</h3>
+          <p>A response has a stated, independently checkable method that supports the answer for the declared question and conditions.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Unresolved structure</h3>
+          <p>No terminal result is declared, or the available information cannot support one. A responsible response should identify the boundary.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="examples" aria-labelledby="examples-title">
+      <div class="section-intro">
+        <p class="eyebrow">Example audits</p>
+        <h2 id="examples-title">What the review catches.</h2>
+        <p>These examples are not claims of truth. They show the evidence, assumptions, and checks a responsible AI answer needs.</p>
+      </div>
+      <div class="example-grid">
+        <article>
+          <p class="example-tag">Forecast</p>
+          <h3>Quarterly sales estimate</h3>
+          <p>An AI projects next-quarter revenue from one month of sales.</p>
+          <dl><div><dt>Finding</dt><dd>Assumption-dependent</dd></div><div><dt>Missing</dt><dd>Seasonality and pipeline data</dd></div></dl>
+        </article>
+        <article>
+          <p class="example-tag">Decision</p>
+          <h3>Job-offer recommendation</h3>
+          <p>An AI selects the “best” role without the person's financial goals or work preferences.</p>
+          <dl><div><dt>Finding</dt><dd>Bounded response only</dd></div><div><dt>Missing</dt><dd>Values and decision criteria</dd></div></dl>
+        </article>
+        <article>
+          <p class="example-tag">Calculation</p>
+          <h3>Expense-total check</h3>
+          <p>An AI totals a supplied list of expenses and shows its arithmetic.</p>
+          <dl><div><dt>Finding</dt><dd>Validated, if checked</dd></div><div><dt>Method</dt><dd>Independent recalculation</dd></div></dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="pilot" aria-labelledby="pilot-title">
+      <div class="pilot-copy">
+        <p class="eyebrow">Founding pilot</p>
+        <h2 id="pilot-title">Turn AI outputs into reviewable records.</h2>
+        <p>A fixed-scope pilot audits a selected batch of AI answers, identifies assumptions and unsupported conclusions, then delivers a shareable findings report.</p>
+        <ul>
+          <li>20 to 50 AI outputs from one real workflow</li>
+          <li>Structured findings for evidence, assumptions, and validation</li>
+          <li>Before-and-after comparison for corrected prompts or responses</li>
+        </ul>
+      </div>
+      <form id="pilot-form" class="pilot-form">
+        <label>
+          Your role or team
+          <input id="pilot-role" required placeholder="Example: Operations team">
+        </label>
+        <label>
+          AI workflow to audit
+          <textarea id="pilot-workflow" required placeholder="Example: We use AI to summarize vendor proposals."></textarea>
+        </label>
+        <label>
+          What a wrong answer costs
+          <textarea id="pilot-cost" required placeholder="Example: Rework, missed deadlines, customer confusion..."></textarea>
+        </label>
+        <button type="submit">Prepare pilot brief</button>
+        <pre id="pilot-preview" hidden></pre>
+      </form>
+    </section>
+
+    <section class="escalation" aria-labelledby="escalation-title">
+      <div>
+        <p class="eyebrow">Optional escalation</p>
+        <h2 id="escalation-title">Request an external review.</h2>
+        <p>This site does not claim that another system is more conscious or more truthful. An external reviewer is another source of analysis whose conclusion must include its method and evidence.</p>
+      </div>
+      <div class="endpoint-card">
+        <label for="endpoint">Reviewer endpoint</label>
+        <input id="endpoint" type="url" placeholder="https://your-review-service.example/review">
+        <p>Use only an endpoint you control. Nothing is sent automatically.</p>
+        <button id="prepare-request" class="secondary" type="button">Prepare review request</button>
+        <pre id="request-preview" hidden></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Resolution Desk</span>
+    <span>Static site for GitHub Pages / pilot-ready</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

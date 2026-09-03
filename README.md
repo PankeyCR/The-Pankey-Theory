@@ -34,4 +34,8 @@ If you are interested in formalizing paradox algebras, developing static non-com
 
 ## 📝 License
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Except where otherwise stated, this work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/). You may share and adapt it for non-commercial purposes with attribution. Commercial use requires separate permission from the copyright holder.
+
+This change applies to future versions of the repository. Earlier material released under CC BY 4.0 remains subject to that earlier license.
+
+See [LICENSING.md](LICENSING.md) for material-specific terms and [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md) to request commercial permission.
