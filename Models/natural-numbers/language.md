@@ -35,15 +35,31 @@ Multiplication is represented by:
 
 `Add` and `Mul` are names for structural forms, not additional primitive operators.
 
+## Logical Construction
+
+Each finite natural-number construction has a logical classification through `▷`.
+
+For example, the successor construction may be classified as:
+
+`(x ⊗ I) ▷ S(x)`
+
+Its arithmetic collapse remains:
+
+`(x ⊗ I) ↓ S(x)`
+
+The first expression classifies the construction as resolved. The second reinterprets the constructed structure as its result.
+
 ## Natural-Number Totality
 
 The totality of natural numbers is represented by:
 
-`N = P ⟳ P : S(P)`
+`N = P ⟳ P ⊢ S(P)`
 
-`P` is a placeholder for any natural structure generated from `0`. In this expression, `S(P)` re-enters `P`: the successor form is eligible to be represented by the same placeholder. This is placeholder re-entry, not structural equality. In particular, `S(P) ≣ P` is not asserted.
+`P` is a placeholder for any natural structure generated from `0`. The condition `S(P)` governs each return to `P`: the successor form is eligible to be represented by the same placeholder. This is placeholder re-entry, not structural equality. In particular, `S(P) ≣ P` is not asserted.
 
 Because `P` may represent the successor form after re-entry, that form may itself have a successor. Thus the loop makes successor construction available again without making an individual natural structure return to an earlier structure.
+
+The totality is an illogical form in the Logic and Illogic Model: it has a successor return and no final natural structure. This classification applies to `N` as a totality, not to any individual finite natural structure.
 
 ## Natural Structural Form
 

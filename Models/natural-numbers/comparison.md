@@ -36,14 +36,14 @@ The multiplication rules have the same shape. For each finite successor structur
 
 ## Meaning of the Loop
 
-`N = P ⟳ P : S(P)`
+`N = P ⟳ P ⊢ S(P)`
 
-is an original structural description of the intended totality. It says that the placeholder `P` is reusable after successor formation. It does not say that any natural number is equal to its successor, and it does not make an individual natural number cyclic.
+is an original structural description of the intended totality. It says that the placeholder `P` returns to itself under the successor condition `S(P)`. It does not say that any natural number is equal to its successor, and it does not make an individual natural number cyclic.
 
 For mathematical rigor, the model must specify that the loop denotes inductive generation:
 
 - `P` first represents `0`.
-- If `P` represents a natural structure, `S(P)` is eligible to re-enter `P`.
+- If `P` represents a natural structure, the condition `S(P)` makes its successor eligible to re-enter `P`.
 - Only structures obtainable by finitely many such re-entries belong to `N`.
 
 With that meaning explicitly fixed, the loop is a notation for well-founded generation rather than an actual circular definition.

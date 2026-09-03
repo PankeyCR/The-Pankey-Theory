@@ -30,11 +30,13 @@ Equal successor structures have equal predecessors.
 
 The natural-number totality is:
 
-`N = P ⟳ P : S(P)`
+`N = P ⟳ P ⊢ S(P)`
 
-`P` is a placeholder, not a natural number. It first represents the origin `0`. Through `S(P)`, its represented structure has a successor form that re-enters `P`. The re-entry means that `S(P)` may again serve as the predecessor for another successor construction; it does not state that `S(P)` is structurally equal to `P`.
+`P` is a placeholder, not a natural number. It first represents the origin `0`. The condition `S(P)` gives its represented structure a successor form that re-enters `P`. The re-entry means that `S(P)` may again serve as the predecessor for another successor construction; it does not state that `S(P)` is structurally equal to `P`.
 
 Therefore `N` contains the origin and every structure obtained from it by a finite number of successor constructions.
+
+As a totality, `N` is illogical: successor closure provides no final natural structure. This does not classify any finite natural structure as illogical.
 
 ## Axiom 6: Determinate Collapse
 

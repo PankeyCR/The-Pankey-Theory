@@ -20,6 +20,10 @@ Upon this universal language, the theory instantiates its own axiomatic system.
 
 The ultimate goal of this project is to build a mature formal system that classifies illogics, defines their interaction dynamics, and serves as a universal base substrate for theoretical modeling across physics, logic, and cognitive sciences.
 
+## Formal Models
+
+The repository includes a constructive [arithmetic model](Models/arithmetic/theory.md) for finite natural-number arithmetic. It defines successor, addition, multiplication, truncated subtraction, and order through structural collapse rules.
+
 ---
 
 ## 📫 Contact & Collaboration

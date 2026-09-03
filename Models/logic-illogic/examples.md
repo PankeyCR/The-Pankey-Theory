@@ -1,37 +1,50 @@
 # Logic and Illogic Examples
 
-## Example 1: Logical Structure
+## Example 1: Direct Forms
 
-`A ▷ T ⊢ R`
+`W ▷ T`
 
-`A ▷ T ⊢ R ↓ A ⊢ L`
+`A ⟳ A`
 
-The model supplies a terminal result, so `A` is logical in this model.
+The first is logical and the second is illogical. They differ only by the classification operator.
 
-## Example 2: Unresolved Self-Reference
+## Example 2: Via Forms
 
-`J ⟳ J : B ⊢ C`
+`W ▷ T : Q`
 
-`J ⟳ J : B ⊢ C ↓ J ⊢ I`
+`A ⟳ A : B`
 
-The self-return is explicitly unresolved. The repeated `J` names an illogic reference and does not introduce a conclusion.
+The via structure extends each direct form without changing its classification.
 
-## Example 3: Logical Boundary
+## Example 3: Complete Forms
 
-`J ⊢ I ↓ B(J)`
+`W ▷ T : Q ⊢ R`
 
-`B(J) ⊗ l ↓ T`
+`A ⟳ A : B ⊢ C`
 
-The boundary can participate in a logical relation. The result concerns `B(J)`, not an internal resolution of `J`.
+Each condition belongs to the complete classification of its form.
 
-## Example 4: Hybrid Structure
+## Example 4: Conjunctive Hybrid
 
-`l ⊗ J ↓ h`
+`W ▷ T : Q ⊢ R ∧ A ⟳ A : B ⊢ C`
 
-`h ⊢ H`
+The hybrid contains one logical component and one illogical component.
 
-The hybrid contains both a resolvable component and an unresolved component.
+## Example 5: Alternative Hybrid
 
-## Example 5: Model Totality
+`W ▷ T : Q ⊢ R ∨ A ⟳ A : B ⊢ C`
 
-`★ = (S ∧ L ∧ l ∧ I ∧ J ∧ H ∧ h ∧ R ∧ B ∧ T ∧ C ∧ Ω)`
+The alternative structure preserves the classification of each component.
+
+## Example 6: Compound Positions
+
+More than one reference may occur at any position within a logical or illogical form.
+
+| Position | Logical form | Illogical form |
+|---|---|---|
+| Origin | `(W ∧ X) ▷ T : Q ⊢ R`<br>`(W ∨ X) ▷ T : Q ⊢ R` | `(A ∧ D) ⟳ A : B ⊢ C`<br>`(A ∨ D) ⟳ A : B ⊢ C` |
+| Outcome | `W ▷ (T ∧ X) : Q ⊢ R`<br>`W ▷ (T ∨ X) : Q ⊢ R` | `A ⟳ (A ∧ D) : B ⊢ C`<br>`A ⟳ (A ∨ D) : B ⊢ C` |
+| Via | `W ▷ T : (Q ∧ X) ⊢ R`<br>`W ▷ T : (Q ∨ X) ⊢ R` | `A ⟳ A : (B ∧ D) ⊢ C`<br>`A ⟳ A : (B ∨ D) ⊢ C` |
+| Condition | `W ▷ T : Q ⊢ (R ∧ X)`<br>`W ▷ T : Q ⊢ (R ∨ X)` | `A ⟳ A : B ⊢ (C ∧ D)`<br>`A ⟳ A : B ⊢ (C ∨ D)` |
+
+The multiple references affect only the position in which they occur. `▷` still classifies the form as logical, and `⟳` still classifies the form as illogical.

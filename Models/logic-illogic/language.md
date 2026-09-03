@@ -1,43 +1,56 @@
 # Logic and Illogic Language
 
-This model assigns the following meanings to references from The Pankey Language.
-
-## References
-
-| Reference | Meaning |
-|---|---|
-| `S` | The totality of structures classified by this model. |
-| `L` | The totality of logical structures. |
-| `l` | An individual logical structure. |
-| `I` | The totality of illogical structures. |
-| `J` | An individual illogical structure. |
-| `H` | The totality of hybrid structures containing logical and illogical components. |
-| `h` | An individual hybrid structure. |
-| `R` | The resolution condition. |
-| `B` | A logical boundary that names or relates an illogic. |
-| `T` | A terminal result of a logical structure. |
-| `C` | The condition that a self-reference remains unresolved. |
-| `Ω` | The reference for an ultimate illogic, if this model chooses to introduce one. |
-| `★` | The totality of references defined by this model. |
-
 ## Structural Forms
 
 Parentheses group a complete structure. They do not introduce an operation.
 
-A logical structure has a declared resolution:
+A logical structure has a declared resolution and in its complete form it looks like this:
 
-`A ▷ T ⊢ R`
+`W ▷ T : Q ⊢ R`
 
-An illogical structure has an unresolved return:
+An illogical structure has an unresolved return and in its complete form it looks like this:
 
 `A ⟳ A : B ⊢ C`
 
-A hybrid structure contains both components:
+A hybrid structure contains both components and it can be separeted with the symbol ∧ or ∨:
 
-`l ⊗ J ⊢ h`
+`W ▷ T : Q ⊢ R ∧ A ⟳ A : B ⊢ C`
+
+`W ▷ T : Q ⊢ R ∨ A ⟳ A : B ⊢ C`
 
 ## Classification
 
-A structure is logical only when a terminal result is admitted by a declared rule. A structure is illogical only when its return is declared unresolved by condition `C`. The loop symbol alone does not make a structure illogical; a finite-state cycle may still have a defined logical interpretation in another model.
+Logical and illogical structures have the same arrangement. Their classification differs only by the structural operator: `▷` for resolution and `⟳` for return.
 
-A boundary `B` names an illogic from outside its unresolved return. It is logical only insofar as the model supplies rules for the boundary itself.
+### Direct Form
+
+`W ▷ T`
+
+`A ⟳ A`
+
+### Via Form
+
+`W ▷ T : Q`
+
+`A ⟳ A : B`
+
+### Complete Form
+
+`W ▷ T : Q ⊢ R`
+
+`A ⟳ A : B ⊢ C`
+
+The condition is part of the complete classification. It may determine how the resolution or return is interpreted, but it does not change the shared arrangement of the two forms.
+
+### Compound Forms
+
+More than one reference may occupy the origin, outcome, via, or condition position. The references may be joined by `∧` or `∨`.
+
+| Position | Conjunctive form | Alternative form |
+|---|---|---|
+| Origin | `(W ∧ X) ▷ T : Q ⊢ R`<br>`(A ∧ D) ⟳ A : B ⊢ C` | `(W ∨ X) ▷ T : Q ⊢ R`<br>`(A ∨ D) ⟳ A : B ⊢ C` |
+| Outcome | `W ▷ (T ∧ X) : Q ⊢ R`<br>`A ⟳ (A ∧ D) : B ⊢ C` | `W ▷ (T ∨ X) : Q ⊢ R`<br>`A ⟳ (A ∨ D) : B ⊢ C` |
+| Via | `W ▷ T : (Q ∧ X) ⊢ R`<br>`A ⟳ A : (B ∧ D) ⊢ C` | `W ▷ T : (Q ∨ X) ⊢ R`<br>`A ⟳ A : (B ∨ D) ⊢ C` |
+| Condition | `W ▷ T : Q ⊢ (R ∧ X)`<br>`A ⟳ A : B ⊢ (C ∧ D)` | `W ▷ T : Q ⊢ (R ∨ X)`<br>`A ⟳ A : B ⊢ (C ∨ D)` |
+
+Compound references do not change the classification: `▷` remains logical and `⟳` remains illogical.

@@ -44,4 +44,10 @@ A real structure need not be identical to any rational approximation within its 
 
 ## Axiom 7: Totality
 
-`R` contains only completed limit structures admitted by Axioms 1 through 6.
+The real-number totality is:
+
+`R = P ⟳ P : (U ∨ V) ⊢ K`
+
+`P` is a placeholder for a completed real structure and returns to itself. `U` and `V` are alternative vias, and `K` is the condition of the return. Their interpretation is not defined by this model.
+
+Therefore `R` contains completed limit structures admitted by Axioms 1 through 6 and has no final real structure. As a totality, `R` is illogical; this does not classify any individual completed real structure as illogical.

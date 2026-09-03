@@ -25,6 +25,16 @@ Thus the first natural structures are:
 
 A natural number is therefore a finite, ordered construction rather than an unstructured mark.
 
+## Dependencies
+
+This model depends on the Logic and Illogic Model for the arrangement and classification of logical and illogical structures.
+
+It inherits `▷` as the classification of a finite resolved construction and `⟳` as the classification of a non-terminal return.
+
+The collapse symbol `↓` retains its natural-number meaning: it reinterprets a constructed structure as its collapse result.
+
+Individual natural-number constructions are logical because each has a finite collapse result. The natural-number totality is illogical because its successor return has no final natural structure.
+
 ## Relation to Other Models
 
 The Binary State Transition Model shows deterministic collapse between two fixed states. This model instead has one origin and an unbounded family of finite successor structures. Both models use interaction and collapse, but this model interprets repeated interaction as constructive growth.

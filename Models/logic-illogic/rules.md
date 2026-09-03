@@ -1,41 +1,53 @@
 # Logic and Illogic Rules
 
-## Rule 1: Logical Classification
+## Rule 1: Direct Classification
 
-A declared resolution classifies a structure as logical:
+Classify a direct form by its structural operator:
 
-`A ▷ T ⊢ R ↓ A ⊢ L`
+`W ▷ T` is logical.
 
-## Rule 2: Illogic Classification
+`A ⟳ A` is illogical.
 
-An explicitly unresolved self-return classifies a structure as illogical:
+## Rule 2: Via Extension
 
-`A ⟳ A : B ⊢ C ↓ A ⊢ I`
+Adding a via structure preserves the classification:
 
-## Rule 3: Boundary Formation
+`W ▷ T` becomes `W ▷ T : Q`.
 
-An illogic can be given a logical boundary:
+`A ⟳ A` becomes `A ⟳ A : B`.
 
-`A ⊢ I ↓ B(A)`
+## Rule 3: Condition Extension
 
-The collapse produces a boundary reference, not an internal resolution of `A`.
+Adding a condition completes the classification:
 
-## Rule 4: Boundary Interaction
+`W ▷ T : Q` becomes `W ▷ T : Q ⊢ R`.
 
-Logical rules may operate on a boundary when they name the boundary explicitly:
+`A ⟳ A : B` becomes `A ⟳ A : B ⊢ C`.
 
-`B(A) ⊗ L ↓ T`
+## Rule 4: Condition Interpretation
 
-No conclusion from this interaction may be substituted as a terminal result of `A` without an additional rule.
+Interpret a condition according to the declared rules of the model. The condition may affect the meaning of the form, but it does not replace `▷` with `⟳` or `⟳` with `▷`.
 
-## Rule 5: Hybrid Classification
+## Rule 5: Compound Position Classification
 
-A structure containing a logical and an illogical component is classified as hybrid:
+References within any position may be joined through `∧` or `∨`:
 
-`l ⊗ J ↓ h`
+`(W ∧ X) ▷ T : Q ⊢ R`
 
-`h ⊢ H`
+`W ▷ (T ∨ X) : Q ⊢ R`
 
-## Rule 6: Resolution Restriction
+`W ▷ T : (Q ∧ X) ⊢ R`
 
-No application of Rules 1 through 5 changes an illogical structure into a logical one. A reclassification requires a new model rule that states what resolves the original unresolved return.
+`W ▷ T : Q ⊢ (R ∨ X)`
+
+The same rule applies to illogical forms with `⟳`. Joining references within a position does not replace `▷` with `⟳` or `⟳` with `▷`.
+
+## Rule 6: Hybrid Classification
+
+Logical and illogical forms may be joined through `∧` or `∨`:
+
+`W ▷ T : Q ⊢ R ∧ A ⟳ A : B ⊢ C`
+
+`W ▷ T : Q ⊢ R ∨ A ⟳ A : B ⊢ C`
+
+The resulting hybrid retains the classification of both components.

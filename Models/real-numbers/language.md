@@ -10,6 +10,7 @@ This model assigns the following meanings to references from The Pankey Language
 | `Z` | The totality of integer structures used as rational numerators. |
 | `Q` | The totality of rational structures. |
 | `R` | The totality of real structures. |
+| `P` | A placeholder for a completed real structure in the real-number totality. |
 | `C` | A rational approximation structure indexed by natural structures. |
 | `L` | The limit reference assigned to a convergent approximation structure. |
 | `Conv` | The condition that an approximation structure converges. |
@@ -63,3 +64,21 @@ Addition and multiplication of completed values are represented by:
 A real structure has the form `L(C)` for a convergent rational approximation structure `C`. Two such forms identify one real structure exactly when `E(C, H)` holds.
 
 The notation `L(C)` does not assert that `C` has a last approximation. It assigns a completed reference to the stable value specified by `C`.
+
+## Logical Construction
+
+A convergent approximation has a logical complete form:
+
+`C ▷ L(C) ⊢ Conv(C)`
+
+The form states that a convergent approximation resolves to its completed real structure. The collapse notation continues to express the reinterpretation of one constructed structure as another.
+
+## Real-Number Totality
+
+The totality of real structures has the complete illogical form:
+
+`R = P ⟳ P : (U ∨ V) ⊢ K`
+
+`P` is a placeholder for a completed real structure and returns to itself. `U` and `V` are two alternative via positions of that return, and `K` is its condition. Their interpretation is not defined by this model.
+
+The totality is illogical in the Logic and Illogic Model because the return has no final real structure. This classification applies to `R` as a totality, not to an individual completed real structure.

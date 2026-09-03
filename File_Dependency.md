@@ -223,6 +223,23 @@ model-specification.md
 
 `Models/neural-network/` additionally builds on the vocabulary introduced by `Models/binary-state-transition/` (interaction, collapse, structural equality), so it also conceptually depends on that model.
 
+The arithmetic model builds on the finite successor structures defined by the natural-numbers model:
+
+```text
+Models/natural-numbers/
+              │
+              ▼
+       Models/arithmetic/
+```
+
+Its formal dependencies are:
+
+```text
+arithmetic/
+    ├── Foundation/language.md
+    └── Models/natural-numbers/
+```
+
 ---
 
 # 7. Application Layer

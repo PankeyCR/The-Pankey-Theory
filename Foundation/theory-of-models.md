@@ -65,6 +65,33 @@ Models are independent.
 
 A model does not require another model unless it explicitly declares that dependency.
 
+---
+
+# Dependencies
+
+A model may depend on another model for arrangements of symbols, ideas, or both.
+
+An arrangement specifies how symbols may be formed into a structure.
+
+An idea specifies the role or concept that a structure represents, such as logic, illogic, number, transformation, or condition.
+
+The dependency identifies the model from which these arrangements or ideas are available.
+
+For each dependency, the dependent model must declare:
+
+- the model it depends on;
+- the arrangements of symbols it uses;
+- the ideas it uses;
+- whether it inherits or replaces the interpretation of each arrangement and idea.
+
+A dependency does not automatically transfer all meanings from one model to another.
+
+A dependent model may use the same arrangement while assigning it a different interpretation, provided that difference is declared. It may also inherit both the arrangement of logical statements and the idea of logic that gives those statements their role.
+
+An arrangement of symbols or an idea may itself be the structure defined by another theory.
+
+This permits a model to use a foundational theory, such as Logic and Illogic, to organize its expressions and to inherit its concept of logic, while preserving its own axioms, references, and domain of interpretation.
+
 Models may therefore:
 
 - extend other models;

@@ -6,6 +6,10 @@ A successor interaction collapses to its successor form:
 
 `(x ⊗ I) ↓ S(x)`
 
+The same finite construction is logically classified by:
+
+`(x ⊗ I) ▷ S(x)`
+
 ## Rule 2: Addition Origin
 
 Adding the origin preserves the first structure:

@@ -46,6 +46,12 @@ Let `C` and `H` be convergent approximation structures with differences smaller 
 
 The sum is specified through finite rational additions at every natural stage and completed by `L`.
 
-## Example 5: Model Totality
+## Example 5: Real-Number Totality
+
+`R = P ⟳ P : (U ∨ V) ⊢ K`
+
+`P` may represent a completed real structure and returns to itself through `U` or `V` under condition `K`. The model leaves the meaning of these positions open, while the totality has no final real structure.
+
+## Example 6: Model References
 
 `★ = (N ∧ Z ∧ Q ∧ R ∧ C ∧ L ∧ Conv ∧ E ∧ D ∧ A ∧ M ∧ O ∧ Positive ∧ Less)`

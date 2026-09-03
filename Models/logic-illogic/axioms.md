@@ -2,52 +2,48 @@
 
 The following assumptions define the model. They are accepted without proof.
 
-## Axiom 1: Classification Domain
+## Axiom 1: Direct Classification
 
-Every structure classified by this model belongs to `S`.
+`W ▷ T` is a logical direct form.
 
-## Axiom 2: Logical Resolution
+`A ⟳ A` is an illogical direct form.
 
-A structure is logical when the model declares a terminal resolution:
+## Axiom 2: Shared Arrangement
 
-`A ▷ T ⊢ R` implies `A ⊢ L`
+Logical and illogical forms have the same arrangement. Their classification differs only by `▷` for resolution or `⟳` for return.
 
-## Axiom 3: Unresolved Self-Reference
+## Axiom 3: Via Classification
 
-A structure is illogical when its self-return is declared unresolved:
+A direct form may include a via structure:
 
-`A ⟳ A : B ⊢ C` implies `A ⊢ I`
+`W ▷ T : Q`
 
-## Axiom 4: Boundary Recognition
+`A ⟳ A : B`
 
-Every illogic may have a logical boundary through which it is referenced:
+The via structure does not change the classification of the form.
 
-`A ⊢ I` implies `B(A) ⊢ S`
+## Axiom 4: Complete Classification
 
-The boundary does not resolve the illogic.
+A via form may include a condition:
 
-## Axiom 5: No Resolution Leakage
+`W ▷ T : Q ⊢ R`
 
-No terminal result may be inferred from an illogic solely because it has been named by a boundary:
+`A ⟳ A : B ⊢ C`
 
-`A ⊢ I` and `B(A) ⊢ S` do not imply `A ▷ T`
+The condition is part of the complete classification.
+
+## Axiom 5: Compound Positions
+
+The origin, outcome, via, or condition position may contain multiple references joined by `∧` or `∨`.
+
+The compound position does not change the classification of the form.
 
 ## Axiom 6: Hybrid Composition
 
-A logical structure and an illogical structure may compose into a hybrid:
+A logical form and an illogical form may compose through `∧` or `∨`.
 
-`l ⊗ J ⊢ h`
-
-`l ⊢ L`
-
-`h ⊢ H`
-
-A hybrid must retain the classification of each component unless a separate rule resolves or reclassifies that component.
+Each component retains its classification within the hybrid.
 
 ## Axiom 7: Relative Classification
 
-Classification is relative to the rules of this model. A structure may receive a different classification in a model that supplies different resolution conditions.
-
-## Axiom 8: Ultimate Illogic
-
-`Ω` may be used as a boundary reference for the totality of illogics. No rule of this model resolves `Ω` or uses it to infer a terminal result for an illogic.
+Classification is relative to the rules of this model. Another model may interpret a condition differently, but it must declare that interpretation.

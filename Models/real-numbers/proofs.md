@@ -57,3 +57,15 @@ If two convergent approximation structures remain separated by a positive ration
 ### Proof
 
 This is exactly Axiom 5. Therefore persistent positive separation prevents structural equality of the limits. QED.
+
+## Proposition 6: The Real-Number Totality Has No Final Structure
+
+The totality `R` does not resolve to a final real structure.
+
+### Proof
+
+By Axiom 7 and Rule 7:
+
+`R = P ⟳ P : (U ∨ V) ⊢ K`
+
+The cycle returns `P` to itself through either via under its declared condition rather than a terminal resolution. Therefore `R` has no final real structure and is illogical as a totality. QED.

@@ -28,9 +28,9 @@
 
 ## Example 4: Natural-Number Totality
 
-`N = P ⟳ P : S(P)`
+`N = P ⟳ P ⊢ S(P)`
 
-`P` first represents `0`. Its successor form `S(P)` re-enters `P`, so `P` may then represent `S(0)`. The same re-entry lets `P` represent `S(S(0))`, then each later successor form.
+`P` first represents `0`. Under the condition `S(P)`, its successor form re-enters `P`, so `P` may then represent `S(0)`. The same conditioned return lets `P` represent `S(S(0))`, then each later successor form.
 
 The return to `P` is placeholder re-entry, not `S(P) ≣ P`.
 

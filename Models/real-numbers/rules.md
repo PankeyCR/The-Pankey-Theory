@@ -45,3 +45,11 @@ A convergent approximation can be refined without changing its completed value w
 `E(C, H) ⊢ L(C) ≣ L(H)`
 
 This is re-entry through equivalent approximation, not a claim that an approximation structure is structurally equal to its limit.
+
+## Rule 7: Totality Return
+
+The real-number placeholder returns to itself through either via under its declared condition:
+
+`R = P ⟳ P : (U ∨ V) ⊢ K`
+
+No return supplies a final member of `R`. The rule does not interpret `U`, `V`, or `K`.
